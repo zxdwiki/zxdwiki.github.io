@@ -1,0 +1,107 @@
+h2 {
+				animation: ani 2s linear 0s infinite;
+			}
+			h2:hover{
+				animation-play-state: paused;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-image: url("带子.jpg");
+				background-repeat: repeat;
+				background-size: cover;
+			}
+			h4{
+				color:black;
+			}
+			h5{
+				color:black;
+			}
+			h6{
+				color:black;
+			}
+			h1{
+				color:black;
+				font-family: 汉仪文黑-85W;
+			}
+			p{
+				font-family: 汉仪文黑-85W;
+				color:black;
+			}
+			@keyframes ani {
+				0%{
+					background-color: red;
+				}
+				25%{
+					background-color: darkred;
+				}
+				50%{
+					background-color: red;
+				}
+				75%{
+					background-color: darkred;
+				}
+				100%{
+					background-color: red;
+				}
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			body{
+				padding-top: 50px;
+				font-size: 15px;
+			}
+			
+			li{
+				list-style: none;
+			}
+			
+			div{
+				text-align: center;
+			}
+			.father{
+				display: inline-block;
+				position: relative;
+				padding: 10px 20px;
+				background-color: darkred;
+			}
+			.son{
+				display: none;
+				position: absolute;
+				background-color: indianred;
+				top: 40px;
+				left: 10px;
+				padding: 5px;
+			}
+			.son>li{
+				padding: 5px;
+			}
+			.son li:hover{
+				background-color: darkred;
+				color: greenyellow;
+			}
+			.father:hover .son{
+				display: block;
+			}
+#screen {
+	width:9999px;
+	height:9999px;
+	animation: 15s wwssadad infinite;
+}
+#screen img{
+	float: left;
+}
+#tv{
+	width:1000px;
+	height:1000px;
+	overflow: hidden;
+}
+@keyframes wwssadad{
+	0%{}
+	25%{transform: translateX(-1000px);}
+	75%{transform: translateX(-2000px);}
+	100%{transform: translateX(-3000px);}
+}
